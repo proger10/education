@@ -23,7 +23,9 @@ window.onload = function main()
 	    conf  = Subject.create( 'Конфликты', '', Subject.LIBERAL ),
 	    pstr  = Subject.create( 'П.Страт.',  '', Subject.LIBERAL ),
 	    phil  = Subject.create( 'Философия', '', Subject.LIBERAL ),
-	    eng   = Subject.create( 'Ин.Яз.',    '', Subject.LIBERAL );
+	    eng   = Subject.create( 'Ин.Яз.',    '', Subject.LIBERAL ),
+	    cpp   = Subject.create( 'C++',       '', Subject.SPECIAL ),
+	    alg   = Subject.create( 'Алгоритмы', '', Subject.SPECIAL );
 	    
 	var 
 	    postupaev   = Teacher.create('Поступаев В.В.'),
@@ -35,6 +37,8 @@ window.onload = function main()
 	    kiyanova    = Teacher.create('Киянова М.К.'),
 	    borisov     = Teacher.create('Борисов И.В.'),
 	    anisimova   = Teacher.create('Анисимова Н.К.'),
+	    dunaev      = Teacher.create('Дунаев Александр'),
+	    gat_sten    = Teacher.create('Гатилов, Стененко'),
 	    unknown     = Teacher.create('');
 	    
 	var 
@@ -44,7 +48,8 @@ window.onload = function main()
 	var 
 	    LECTURE  = Type.create('Лекция'),
 	    SEMINAR  = Type.create('Семинар'),
-	    PRACTICE = Type.create('Практикум');
+	    PRACTICE = Type.create('Практикум'),
+	    SHAD     = Type.create('ШАД');
 	
 	mon.add(Course.create(10*60 + 50, 3*60 + 25, LECTURE,  cpl,   inp(508),  mig_val_idr  ));
 	mon.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR,  conf,  nsu(416),  kiyanova     ));
@@ -54,13 +59,15 @@ window.onload = function main()
 	tue.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE,  inft,  nsu('БА'), shamirzaev   ));
 	tue.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  inft,  nsu('БА'), abramkin     ));
 	
-	wed.add(Course.create(20*60 +  0, 1*60 + 35, SEMINAR,  plasm, inp('321а'), polosatkin ));
-	
+	wed.add(Course.create(18*60 + 10, 3*60 + 10, SHAD,     cpp,   nsu(4204), dunaev       ));
+	// wed.add(Course.create(20*60 +  0, 1*60 + 35, SEMINAR,  plasm, nsu('321а'), polosatkin ));
+
 	fri.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  phil,  nsu(429),  borisov      ));
 
 	sat.add(Course.create( 9*60 +  0, 1*60 + 35, SEMINAR,  eng,   nsu(5251), anisimova    ));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  plasm, nsu(442),  postupaev    ));
-	sat.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  phil,  nsu(442),  borisov      ));
+	sat.add(Course.create(14*60 + 30, 3*60 + 25, SHAD,     alg,   nsu(1155), gat_sten     ));
+	// sat.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  phil,  nsu(442),  borisov      ));
 	
 	week.add(mon);
 	week.add(tue);
