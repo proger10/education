@@ -16,7 +16,7 @@ window.onload = function main()
 	    
 	var 
 	    plasm = Subject.create( 'Плазма',    '', Subject.COMMON  ),
-	    inft  = Subject.create( 'О.Инф.Тех.','', Subject.SPECIAL ),
+	    inft  = Subject.create( 'ФОИТ',      '', Subject.SPECIAL ),
 	    plis  = Subject.create( 'ПЛИС',      '', Subject.SPECIAL ),
 	    cpl   = Subject.create( 'Совр.Я.П.', '', Subject.COMMON  ),
 	    pyt   = Subject.create( 'Python',    '', Subject.SPECIAL ),
@@ -29,7 +29,7 @@ window.onload = function main()
 	    
 	var 
 	    postupaev   = Teacher.create('Поступаев В.В.'),
-	    polosatkin  = Teacher.create('Полосаткин С.В.'),
+	    murahtin    = Teacher.create('Мурахтин С.В.'),
 	    shamirzaev  = Teacher.create('Шамирзаев Т.С.'),
 	    abramkin    = Teacher.create('Абрамкин Д.С.'),
 	    mig_val_idr = Teacher.create('Мигинский, Валеев, Идрисов'),
@@ -56,18 +56,18 @@ window.onload = function main()
 	mon.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  pstr,  nsu(416),  kiyanova     ));
 	
 	tue.add(Course.create( 9*60 +  0, 1*60 + 35, PRACTICE, plis,  inp(508),  unknown      ));
+	tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  plasm, nsu(333),  murahtin     ));
 	tue.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE,  inft,  nsu('БА'), shamirzaev   ));
 	tue.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  inft,  nsu('БА'), abramkin     ));
 	
 	wed.add(Course.create(18*60 + 10, 3*60 + 10, SHAD,     cpp,   nsu(4204), dunaev       ));
-	// wed.add(Course.create(20*60 +  0, 1*60 + 35, SEMINAR,  plasm, nsu('321а'), polosatkin ));
 
 	fri.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  phil,  nsu(429),  borisov      ));
 
 	sat.add(Course.create( 9*60 +  0, 1*60 + 35, SEMINAR,  eng,   nsu(5251), anisimova    ));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  plasm, nsu(442),  postupaev    ));
 	sat.add(Course.create(14*60 + 30, 3*60 + 25, SHAD,     alg,   nsu(1155), gat_sten     ));
-	// sat.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  phil,  nsu(442),  borisov      ));
+	// sat.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE,  phil,  nsu(442),  borisov      ));
 	
 	week.add(mon);
 	week.add(tue);
