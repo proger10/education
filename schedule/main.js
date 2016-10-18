@@ -11,7 +11,7 @@ window.onload = function main()
 	    tue = Day.create( 2, 'Вторник'     ),
 	    wed = Day.create( 3, 'Среда'       ),
 	    thu = Day.create( 4, 'Четверг'     ),
-	    fri = Day.create( 5, 'Пятница'     );
+	    fri = Day.create( 5, 'Пятница'     ),
 	    sat = Day.create( 6, 'Суббота'     );
 	    
 	var 
@@ -50,6 +50,7 @@ window.onload = function main()
 	    PRACTICE = Type.create('Практикум'),
 	    SHAD     = Type.create('ШАД');
 	
+	mon.add(Course.create( 9*60 +  0, 1*60 + 35, SEMINAR,  eng,   nsu(1325), anisimova    ));
 	mon.add(Course.create(10*60 + 50, 3*60 + 25, LECTURE,  cpl,   inp(508),  mig_val_idr  ));
 	
 	tue.add(Course.create( 9*60 +  0, 1*60 + 35, PRACTICE, plis,  inp(508),  unknown      ));
@@ -62,7 +63,6 @@ window.onload = function main()
 
 	fri.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR,  phil,  nsu(429),  borisov      ));
 
-	sat.add(Course.create( 9*60 +  0, 1*60 + 35, SEMINAR,  eng,   nsu(5251), anisimova    ));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  plasm, nsu(442),  postupaev    ));
 	sat.add(Course.create(14*60 + 30, 3*60 + 25, SHAD,     alg,   nsu(1155), gat_sten     ));
 	// sat.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE,  phil,  nsu(442),  borisov      ));
