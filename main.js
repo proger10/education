@@ -51,7 +51,7 @@ window.onload = function main()
 	tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(3151), tambovskaya));
 	tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, rnd, nsu(313), arkashov));
 	
-	thu.add(Course.create( 9*60 + 00, 3*60 + 20, PRACTICE, tsani, nsu(346), unknown));
+	thu.add(Course.create( 9*60 + 00, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
 	thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
 
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
