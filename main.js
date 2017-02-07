@@ -44,7 +44,7 @@ window.onload = function main()
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
 	    nov = function (aud) { return Location.create("НК",aud); },
-	    inp = function (aud) { return Location.create("ИЯФ",aud);
+	    inp = function (aud) { return Location.create("ИЯФ",aud) };
 	    iae = function (aud) { return Location.create("ИАиЭ",aud); };
 
 	var 
