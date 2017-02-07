@@ -20,8 +20,11 @@ window.onload = function main()
 	    eng  = Subject.create('Английский', '', Subject.LIBERA),
 	    rnd  = Subject.create('Случайные процессы', '', Subject.COMMON),
 	    tsani  = Subject.create('ТСАНИ', '', Subject.COMMON),
-	    tvms  = Subject.create('Теор. вер. и мат. стат.', '', Subject.COMMON);
-	    //unix = Subject.create('UNIX', '', Subject.SPECIAL),
+	    tvms  = Subject.create('Теор. вер. и мат. стат.', '', Subject.COMMON)
+	    db = Subject.create('Базы данных', '', Subject.SPECIAL),
+	    ood = Subject.create('ООД', '', Subject.SPECIAL),
+	    dis = Subject.create('Цифровые интегральные схемы', '', Subject.SPECIAL),
+	    evm = Subject.create('ЭВМ в эксперименте', '', Subject.SPECIAL);
 	    
 	var 
 	    kozhevnikov = Teacher.create('Кожевников А. А.'),
@@ -31,12 +34,18 @@ window.onload = function main()
 	    arkashov = Teacher.create('Аркашов Н. С.'),
 	    kovalevsky = Teacher.create('Ковалевский А. П.'),
 	    prokopenko = Teacher.create('Прокопенко Е. И.'),
+	    islam = Teacher.create('Исламов Д.Р.'),
+	    pirogov = Teacher.create('Пирогов С.А.'),
+	    fatkin = Teacher.create('Фатькин Г.А.'),
+	    gayazov = Teacher.create('Гаязов В.С.'),
+	    islam = Teacher.create('Исламов Д.Р.'),
 	    unknown = Teacher.create('');
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
 	    nov = function (aud) { return Location.create("НК",aud); },
-	    inp = function (aud) { return Location.create("ИЯФ",aud); };
+	    inp = function (aud) { return Location.create("ИЯФ",aud);
+	    iae = function (aud) { return Location.create("ИАиЭ",aud); };
 
 	var 
 	    LECTURE  = Type.create('Лекция'),
@@ -50,6 +59,10 @@ window.onload = function main()
 	tue.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, phil, nsu('БА'), tsyplakov));
 	tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(3151), tambovskaya));
 	tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, rnd, nsu(313), arkashov));
+
+	wed.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
+	wed.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
+	wed.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, dis, inp('Конф. зал'), fatkin));
 	
 	thu.add(Course.create( 9*60 + 00, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
 	thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
