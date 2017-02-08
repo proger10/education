@@ -63,7 +63,7 @@ window.onload = function main()
 
 	wed.add(Course.create(09*60 + 00, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
 	wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
-	wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Конф. зал'), fatkin));
+	wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
 	thu.add(Course.create( 9*60 + 00, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
 	thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
