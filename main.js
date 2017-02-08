@@ -34,11 +34,12 @@ window.onload = function main()
 	    arkashov = Teacher.create('Аркашов Н. С.'),
 	    kovalevsky = Teacher.create('Ковалевский А. П.'),
 	    prokopenko = Teacher.create('Прокопенко Е. И.'),
-	    islam = Teacher.create('Исламов Д.Р.'),
-	    pirogov = Teacher.create('Пирогов С.А.'),
-	    fatkin = Teacher.create('Фатькин Г.А.'),
-	    gayazov = Teacher.create('Гаязов В.С.'),
-	    islam = Teacher.create('Исламов Д.Р.'),
+	    islam = Teacher.create('Исламов Д. Р.'),
+	    pirogov = Teacher.create('Пирогов С. А.'),
+	    fatkin = Teacher.create('Фатькин Г. А.'),
+	    gayazov = Teacher.create('Гаязов В. С.'),
+	    maginsky = Teacher.create('Магинский Д. С.'),
+	    korol = Teacher.create('Король А. А.'),
 	    unknown = Teacher.create('');
 	    
 	var 
@@ -67,7 +68,11 @@ window.onload = function main()
 	thu.add(Course.create( 9*60 + 00, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
 	thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
 
+	fri.add(Course.create(09*60 + 00, 1*60 + 35, PRACTICE,  db,  inp(508), pirogov));
+	fri.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE,  ood,  iae('УЦ'), maginsky));
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
+	fri.add(Course.create(12*60 + 30, 1*60 + 35, SEMINAR,  evm,  inp(508), korol));
+	fri.add(Course.create(14*60 + 15, 1*60 + 35, PRACTICE,  evm,  inp(508), korol));
 
 	sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, tvms, nsu(304), prokopenko));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, sbp, nsu(316), kozhevnikov, 0));
