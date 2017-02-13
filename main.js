@@ -28,7 +28,6 @@ window.onload = function main()
 	    
 	var 
 	    kozhevnikov = Teacher.create('Кожевников А. А.'),
-	    shemyakin = Teacher.create('Шемякин Д. Н.'),
 	    tsyplakov = Teacher.create('Цыплаков Д. А.'),
 	    tambovskaya = Teacher.create('Тамбовская Л. Е.'),
 	    arkashov = Teacher.create('Аркашов Н. С.'),
@@ -54,7 +53,7 @@ window.onload = function main()
 	    PRACTICE = Type.create('Практикум');
 	
 	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, sbp,   nsu(316), kozhevnikov));
-	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp,   nsu(328), shemyakin  ));
+	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp,   nsu(328), kozhevnikov));
 	
 	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, phil, nsu(316), tsyplakov));
 	tue.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, phil, nsu('БА'), tsyplakov));
@@ -76,7 +75,7 @@ window.onload = function main()
 
 	sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, tvms, nsu(304), prokopenko));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, sbp, nsu(316), kozhevnikov, 0));
-	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(310),  shemyakin, 1));
+	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(310),  kozhevnikov, 1));
 	
 	week.add(mon);
 	week.add(tue);
