@@ -69,9 +69,9 @@ window.onload = function main()
 
 	fri.add(Course.create(09*60 + 00, 1*60 + 35, PRACTICE,  db,  inp(508), pirogov));
 	fri.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE,  ood,  iae('УЦ'), maginsky));
-	fri.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE,  evm,  inp(508), korol));
-	fri.add(Course.create(14*60 + 30, 1*60 + 35, PRACTICE,  evm,  inp(508), korol));
-	fri.add(Course.create(16*60 + 10, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
+	fri.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE,  evm,  inp(508), korol));
+	fri.add(Course.create(14*60 + 15, 1*60 + 35, PRACTICE,  evm,  inp(508), korol));
+	fri.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
 
 	sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, tvms, nsu(304), prokopenko));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, sbp, nsu(316), kozhevnikov, 0));
