@@ -56,9 +56,9 @@ window.onload = function main()
 	//mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp,   nsu(328), kozhevnikov));
 	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, sbp,   nsu(316), kozhevnikov));
 	
-	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, phil, nsu(316), tsyplakov));
-	tue.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, phil, nsu('БА'), tsyplakov));
-	tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(3151), tambovskaya));
+	//tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, phil, nsu(316), tsyplakov));
+	//tue.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, phil, nsu('БА'), tsyplakov));
+	//tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(3151), tambovskaya));
 	//tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, rnd, nsu(313), arkashov));
 
 	//wed.add(Course.create( 9*60 +  0, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
@@ -69,7 +69,7 @@ window.onload = function main()
 	//thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
 
 	fri.add(Course.create( 9*60 +  0, 1*60 + 35, PRACTICE,  db,  inp(508), pirogov));
-	fri.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE,  ood,  iae('УЦ'), maginsky));
+	//fri.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE,  ood,  iae('УЦ'), maginsky));
 	fri.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE,  evm,  inp(508), korol));
 	fri.add(Course.create(14*60 + 15, 1*60 + 35, PRACTICE,  evm,  inp(508), korol));
 	fri.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR,  eng,  nov(4204), tambovskaya));
