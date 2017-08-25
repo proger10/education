@@ -30,7 +30,7 @@ window.onload = function main()
 	    volodin = Teacher.create('Володин В. А.'),
 	    bloshkin = Teacher.create('Блошкин А. А.'),
 	    smirnov = Teacher.create('Смирнов С. В.'),
-	    sidelnikov = Teacher.create('Сидельников О. С.'),
+	    sidelnikov = Teacher.create('Сидельников О. С.');
 	    //pirogov = Teacher.create('Пирогов С. А.'),
 	    //fatkin = Teacher.create('Фатькин Г. А.'),
 	    //gayazov = Teacher.create('Гаязов С. В.'),
@@ -40,7 +40,7 @@ window.onload = function main()
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
-	    nov = function (aud) { return Location.create("НК",aud); },
+	    nov = function (aud) { return Location.create("НК",aud); };
 	    //inp = function (aud) { return Location.create("ИЯФ",aud) };
 	    //iae = function (aud) { return Location.create("ИАиЭ",aud); };
 
