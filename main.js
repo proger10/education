@@ -15,70 +15,63 @@ window.onload = function main()
 	    sat = Day.create( 6, 'Суббота'     );
 	    
 	var 
-	    sbp  = Subject.create('ФКС', '', Subject.COMMON),
-	    phil = Subject.create('Философия', '', Subject.LIBERA)
+	    obj  = Subject.create('ОБЖ', '', Subject.COMMON),
 	    eng  = Subject.create('Английский', '', Subject.LIBERA),
-	    rnd  = Subject.create('Случайные процессы', '', Subject.COMMON),
-	    tsani  = Subject.create('ТСАНИ', '', Subject.COMMON),
-	    tvms  = Subject.create('Теор. вер. и мат. стат.', '', Subject.COMMON)
-	    db = Subject.create('Базы данных', '', Subject.SPECIAL),
-	    ood = Subject.create('ООД', '', Subject.SPECIAL),
-	    dis = Subject.create('Цифровые интегральные схемы', '', Subject.SPECIAL),
-	    evm = Subject.create('ЭВМ в эксперименте', '', Subject.SPECIAL);
+	    fome  = Subject.create('Физические основы микроэлектроники', '', Subject.COMMON),
+	    ovf  = Subject.create('Основы вычислительной физики', '', Subject.COMMON)
+	    //db = Subject.create('Базы данных', '', Subject.SPECIAL),
+	    //ood = Subject.create('ООД', '', Subject.SPECIAL),
+	    //dis = Subject.create('Цифровые интегральные схемы', '', Subject.SPECIAL),
+	    //evm = Subject.create('ЭВМ в эксперименте', '', Subject.SPECIAL);
 	    
 	var 
-	    kozhevnikov = Teacher.create('Кожевников А. А.'),
-	    tsyplakov = Teacher.create('Цыплаков Д. А.'),
+	    kazancev = Teacher.create('Казанцев А. А.'),
 	    tambovskaya = Teacher.create('Тамбовская Л. Е.'),
-	    arkashov = Teacher.create('Аркашов Н. С.'),
-	    kovalevsky = Teacher.create('Ковалевский А. П.'),
-	    prokopenko = Teacher.create('Прокопенко Е. И.'),
-	    islam = Teacher.create('Исламов Д. Р.'),
-	    pirogov = Teacher.create('Пирогов С. А.'),
-	    fatkin = Teacher.create('Фатькин Г. А.'),
-	    gayazov = Teacher.create('Гаязов С. В.'),
-	    maginsky = Teacher.create('Магинский Д. С.'),
-	    korol = Teacher.create('Король А. А.'),
-	    unknown = Teacher.create('');
+	    volodin = Teacher.create('Володин В. А.'),
+	    bloshkin = Teacher.create('Блошкин А. А.'),
+	    smirnov = Teacher.create('Смирнов С. В.'),
+	    sidelnikov = Teacher.create('Сидельников О. С.'),
+	    //pirogov = Teacher.create('Пирогов С. А.'),
+	    //fatkin = Teacher.create('Фатькин Г. А.'),
+	    //gayazov = Teacher.create('Гаязов С. В.'),
+	    //maginsky = Teacher.create('Магинский Д. С.'),
+	    //korol = Teacher.create('Король А. А.'),
+	    //unknown = Teacher.create('');
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
 	    nov = function (aud) { return Location.create("НК",aud); },
-	    inp = function (aud) { return Location.create("ИЯФ",aud) };
-	    iae = function (aud) { return Location.create("ИАиЭ",aud); };
+	    //inp = function (aud) { return Location.create("ИЯФ",aud) };
+	    //iae = function (aud) { return Location.create("ИАиЭ",aud); };
 
 	var 
 	    LECTURE  = Type.create('Лекция'),
 	    SEMINAR  = Type.create('Семинар'),
 	    PRACTICE = Type.create('Практикум');
 	
-	//mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, sbp,   nsu(316), kozhevnikov));
-	//mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp,   nsu(328), kozhevnikov));
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, sbp,   nsu(316), kozhevnikov));
+	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev, 1));
+	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
 	
-	//tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, phil, nsu(316), tsyplakov));
-	//tue.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, phil, nsu('БА'), tsyplakov));
-	//tue.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(3151), tambovskaya));
-	//tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, rnd, nsu(313), arkashov));
+	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(324),  volodin));
+	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, fome,  nsu(324),  bloshkin));
+	tue.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, ovf,   nsu('БА'), smirnov));
 
 	//wed.add(Course.create( 9*60 +  0, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
-	wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
-	wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
+	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
+	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
 	//thu.add(Course.create( 9*60 +  0, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
 	//thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
 
-	fri.add(Course.create( 9*60 +  0, 1*60 + 35, PRACTICE,  db,  inp(508), pirogov));
-	//fri.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE,  ood,  iae('УЦ'), maginsky));
-	fri.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE,  evm,  inp(508), korol));
-	fri.add(Course.create(14*60 + 15, 1*60 + 35, PRACTICE,  evm,  inp(508), korol));
-	fri.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR,  eng,  nov(4204), tambovskaya));
+	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  ovf,  inp(305),  sidelnikov));
+	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
 
 	//sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, tvms, nsu(304), prokopenko));
 	//sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, sbp, nsu(316), kozhevnikov, 0));
 	//sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(310),  kozhevnikov, 1));
-	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(316), kozhevnikov, 0));
-	sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(310),  kozhevnikov, 1));
+	//sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(316), kozhevnikov, 0));
+	//sat.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, sbp, nsu(310),  kozhevnikov, 1));
 	
 	week.add(mon);
 	week.add(tue);
