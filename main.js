@@ -19,7 +19,7 @@ window.onload = function main()
 	    eng  = Subject.create('Английский', '', Subject.LIBERA),
 	    fome  = Subject.create('Физические основы микроэлектроники', '', Subject.COMMON),
 	    ovf  = Subject.create('Основы вычислительной физики', '', Subject.COMMON)
-	    //db = Subject.create('Базы данных', '', Subject.SPECIAL),
+	    pdo = Subject.create('Психология деловых отношений', '', Subject.LIBERA),
 	    //ood = Subject.create('ООД', '', Subject.SPECIAL),
 	    //dis = Subject.create('Цифровые интегральные схемы', '', Subject.SPECIAL),
 	    //evm = Subject.create('ЭВМ в эксперименте', '', Subject.SPECIAL);
@@ -31,7 +31,7 @@ window.onload = function main()
 	    bloshkin = Teacher.create('Блошкин А. А.'),
 	    smirnov = Teacher.create('Смирнов С. В.'),
 	    sidelnikov = Teacher.create('Сидельников О. С.');
-	    //pirogov = Teacher.create('Пирогов С. А.'),
+	    kiyanova = Teacher.create('Киянова М. К.'),
 	    //fatkin = Teacher.create('Фатькин Г. А.'),
 	    //gayazov = Teacher.create('Гаязов С. В.'),
 	    //maginsky = Teacher.create('Магинский Д. С.'),
@@ -56,6 +56,7 @@ window.onload = function main()
 	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(324),  volodin));
 	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, fome,  nsu(324),  bloshkin));
 	tue.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, ovf,   nsu('БА'), smirnov));
+	tue.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, pdo,   nsu('416'), kiyanova));
 
 	//wed.add(Course.create( 9*60 +  0, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
 	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
