@@ -20,9 +20,8 @@ window.onload = function main()
 	    fome  = Subject.create('Физические основы микроэлектроники', '', Subject.COMMON),
 	    ovf  = Subject.create('Основы вычислительной физики', '', Subject.COMMON),
 	    pdo = Subject.create('Психология деловых отношений', '', Subject.LIBERA);
-	    //ood = Subject.create('ООД', '', Subject.SPECIAL),
-	    //dis = Subject.create('Цифровые интегральные схемы', '', Subject.SPECIAL),
-	    //evm = Subject.create('ЭВМ в эксперименте', '', Subject.SPECIAL);
+	    graph = Subject.create('Графика', '', Subject.SPECIAL),
+	    mp = Subject.create('МП системы', '', Subject.SPECIAL),
 	    
 	var 
 	    kazancev = Teacher.create('Казанцев А. А.'),
@@ -31,23 +30,19 @@ window.onload = function main()
 	    bloshkin = Teacher.create('Блошкин А. А.'),
 	    smirnov = Teacher.create('Смирнов С. В.'),
 	    sidelnikov = Teacher.create('Сидельников О. С.'),
-	    kiyanova = Teacher.create('Киянова М. К.');
-	    //fatkin = Teacher.create('Фатькин Г. А.'),
-	    //gayazov = Teacher.create('Гаязов С. В.'),
-	    //maginsky = Teacher.create('Магинский Д. С.'),
-	    //korol = Teacher.create('Король А. А.'),
-	    //unknown = Teacher.create('');
+	    kiyanova = Teacher.create('Киянова М. К.'),
+	    hayrulin = Teacher.create('Хайрулин С. С.'),
+	    osipov = Teacher.create('Осипов В. Н.'),
+	    medvedev = Teacher.create('Осипов В. Н.');
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
-	    nov = function (aud) { return Location.create("НК",aud); };
-	    //inp = function (aud) { return Location.create("ИЯФ",aud) };
-	    //iae = function (aud) { return Location.create("ИАиЭ",aud); };
+	    nov = function (aud) { return Location.create("НК",aud); },
+	    inp = function (aud) { return Location.create("ИЯФ",aud) };
 
 	var 
 	    LECTURE  = Type.create('Лекция'),
-	    SEMINAR  = Type.create('Семинар'),
-	    PRACTICE = Type.create('Практикум');
+	    SEMINAR  = Type.create('Семинар');
 	
 	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev));
 	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev, 0));
@@ -62,8 +57,10 @@ window.onload = function main()
 	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
 	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
-	//thu.add(Course.create( 9*60 +  0, 3*60 + 25, PRACTICE, tsani, nsu(346), unknown));
-	//thu.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, tvms, nsu('БА'), kovalevsky));
+	thu.add(Course.create( 9*60 +  0, 3*60 + 25, LECTURE, graph, inp(508), hayrulin));
+	thu.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, graph, inp(508), hayrulin));
+	thu.add(Course.create(12*60 + 30, 1*60 + 35, SEMINAR, graph, inp('Конф. зал'), osipov));
+	thu.add(Course.create(14*60 + 15, 1*60 + 35, SEMINAR, graph, inp(508), medvedev));
 
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  ovf,  nsu(305),  sidelnikov));
 	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
