@@ -21,7 +21,7 @@ window.onload = function main()
 	    ovf  = Subject.create('Основы вычислительной физики', '', Subject.COMMON),
 	    pdo = Subject.create('Психология деловых отношений', '', Subject.LIBERA);
 	    graph = Subject.create('Графика', '', Subject.SPECIAL),
-	    mp = Subject.create('МП системы', '', Subject.SPECIAL),
+	    mp = Subject.create('МП системы', '', Subject.SPECIAL);
 	    
 	var 
 	    kazancev = Teacher.create('Казанцев А. А.'),
@@ -59,8 +59,8 @@ window.onload = function main()
 	
 	thu.add(Course.create( 9*60 +  0, 3*60 + 25, LECTURE, graph, inp(508), hayrulin));
 	thu.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, graph, inp(508), hayrulin));
-	thu.add(Course.create(12*60 + 30, 1*60 + 35, SEMINAR, graph, inp('Конф. зал'), osipov));
-	thu.add(Course.create(14*60 + 15, 1*60 + 35, SEMINAR, graph, inp(508), medvedev));
+	thu.add(Course.create(12*60 + 30, 1*60 + 35, SEMINAR, mp, inp('Конф. зал'), osipov));
+	thu.add(Course.create(14*60 + 15, 1*60 + 35, SEMINAR, mp, inp(508), medvedev));
 
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  ovf,  nsu(305),  sidelnikov));
 	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
