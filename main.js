@@ -15,7 +15,7 @@ window.onload = function main()
 	    sat = Day.create( 6, 'Суббота'     );
 	    
 	var 
-	    obj  = Subject.create('ОБЖ', '', Subject.COMMON),
+	    bj  = Subject.create('БЖ', '', Subject.COMMON),
 	    eng  = Subject.create('Английский', '', Subject.LIBERA),
 	    fome  = Subject.create('Физические основы микроэлектроники', '', Subject.COMMON),
 	    ovf  = Subject.create('Основы вычислительной физики', '', Subject.COMMON),
@@ -24,7 +24,7 @@ window.onload = function main()
 	    mp = Subject.create('МП системы', '', Subject.SPECIAL);
 	    
 	var 
-	    kazancev = Teacher.create('Казанцев А. А.'),
+	    ivanchenko = Teacher.create('Иванченко А. А.'),
 	    tambovskaya = Teacher.create('Тамбовская Л. Е.'),
 	    volodin = Teacher.create('Володин В. А.'),
 	    bloshkin = Teacher.create('Блошкин А. А.'),
@@ -44,8 +44,8 @@ window.onload = function main()
 	    LECTURE  = Type.create('Лекция'),
 	    SEMINAR  = Type.create('Семинар');
 	
-	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev));
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, obj,   nsu(315),  kazancev, 0));
+	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko, 1));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
 	
 	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(324),  volodin));
