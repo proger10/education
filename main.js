@@ -48,8 +48,8 @@ window.onload = function main()
 	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko, 1));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
 	
-	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(324),  volodin));
-	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, fome,  nsu(324),  bloshkin));
+	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(312),  volodin));
+	tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, fome,  nsu(312),  bloshkin));
 	tue.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, ovf,   nsu('БА'), smirnov));
 	tue.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, pdo,   nsu('416'), kiyanova));
 
