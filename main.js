@@ -57,10 +57,10 @@ window.onload = function main()
 	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
 	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
-	thu.add(Course.create( 9*60 +  0, 1*60 + 35, LECTURE, graph, inp(508), hayrulin));
-	thu.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, graph, inp(508), hayrulin));
-	thu.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, mp, inp('Конф. зал'), osipov));
-	thu.add(Course.create(14*60 + 15, 1*60 + 35, SEMINAR, mp, inp(508), medvedev));
+	thu.add(Course.create(10*60 + 45, 1*60 + 35, LECTURE, graph, inp(508), hayrulin));
+	thu.add(Course.create(12*60 + 30, 1*60 + 35, SEMINAR, graph, inp(508), hayrulin));
+	thu.add(Course.create(14*60 + 15, 1*60 + 35, LECTURE, mp, inp('Конф. зал'), osipov));
+	thu.add(Course.create(16*60 + 00, 1*60 + 35, SEMINAR, mp, inp(508), medvedev));
 
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  ovf,  nsu(305),  sidelnikov));
 	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
