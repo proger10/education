@@ -45,7 +45,7 @@ window.onload = function main()
 	    SEMINAR  = Type.create('Семинар');
 	
 	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko, 1));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
 	
 	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(312),  volodin));
