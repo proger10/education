@@ -24,7 +24,7 @@ window.onload = function main()
 	    mp = Subject.create('МП системы', '', Subject.SPECIAL);
 	    
 	var 
-	    ivanchenko = Teacher.create('Иванченко А. А.'),
+	    ivanchenko = Teacher.create('Ивченко А. А.'),
 	    tambovskaya = Teacher.create('Тамбовская Л. Е.'),
 	    volodin = Teacher.create('Володин В. А.'),
 	    bloshkin = Teacher.create('Блошкин А. А.'),
@@ -45,7 +45,7 @@ window.onload = function main()
 	    SEMINAR  = Type.create('Семинар');
 	
 	mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, bj,   nsu(304),  ivanchenko));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
 	
 	tue.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, fome,  nsu(312),  volodin));
@@ -63,7 +63,7 @@ window.onload = function main()
 	thu.add(Course.create(16*60 + 00, 1*60 + 35, SEMINAR, mp, inp(508), medvedev));
 
 	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR,  ovf,  nsu(305),  sidelnikov));
-	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(3123), tambovskaya));
+	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR,  eng,  nov(5218), tambovskaya));
 
 	//sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, tvms, nsu(304), prokopenko));
 	//sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, sbp, nsu(316), kozhevnikov, 0));
