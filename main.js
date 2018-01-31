@@ -49,7 +49,7 @@ window.onload = function main()
 	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
 	thu.add(Course.create(14*60 + 15, 1*60 + 35, LECTURE, intel, nsu(313), shehtman));
-	thu.add(Course.create(16*60 + 00, 1*60 + 35, SEMINAR, fiz, nsu(316), petrova));
+	thu.add(Course.create(16*60 + 00, 1*60 + 35, SEMINAR, biz, nsu(316), petrova));
 
 	fri.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE,  prep,  nsu('БА'), knyazev));
 
