@@ -55,12 +55,12 @@ window.onload = function main()
 
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov, 0));
 	
-	week.add(mon);
+	// week.add(mon);
 	week.add(tue);
 	week.add(wed);
 	week.add(thu);
 	week.add(fri);
-	//week.add(sat);
+	week.add(sat);
 	
 	frame.add(week);
 	
