@@ -19,14 +19,16 @@ window.onload = function main()
 	    intel  = Subject.create('Охрана интелектуальной собственности', '', Subject.COMMON),
 	    biz  = Subject.create('Бизнес-планирование', '', Subject.COMMON),
 	    prep  = Subject.create('Искус. препод. физ.', '', Subject.COMMON),
-	    eko = Subject.create('Экология', '', Subject.COMMON);
+	    eko = Subject.create('Экология', '', Subject.COMMON),
+	    nir = Subject.create('Тьюториал по подготовке научной публикации', '', Subject.COMMON);
 	    
 	var 
 	    palchikov = Teacher.create('Пальчиков Е.И..'),
 	    shehtman = Teacher.create('Шехтман Е.Л.'),
 	    petrova = Teacher.create('Петрова Э.Д.'),
 	    knyazev = Teacher.create('Князев Б.А.'),
-	    arjannikov = Teacher.create('Аржанников А.В.');
+	    arjannikov = Teacher.create('Аржанников А.В.'),
+	    jullog = Teacher.create('Жуланов В.В., Логашенко И.Б.');
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
@@ -48,6 +50,7 @@ window.onload = function main()
 	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
 	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
 	
+	thu.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, nir, inp(508), jullog));
 	thu.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, intel, nsu(313), shehtman));
 	thu.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, biz, nsu(316), petrova));
 
