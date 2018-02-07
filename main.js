@@ -55,7 +55,7 @@ window.onload = function main()
 
 	fri.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE,  prep,  nsu('БА'), knyazev));
 
-	thu.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
+	sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
 	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov, 0));
 	
 	// week.add(mon);
