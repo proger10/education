@@ -15,20 +15,22 @@ window.onload = function main()
 	    sat = Day.create( 6, 'Суббота'     );
 	    
 	var 
-	    fioi  = Subject.create('Физические основы информатики', '', Subject.COMMON),
-	    intel  = Subject.create('Охрана интелектуальной собственности', '', Subject.COMMON),
-	    biz  = Subject.create('Бизнес-планирование', '', Subject.COMMON),
-	    prep  = Subject.create('Искус. препод. физ.', '', Subject.COMMON),
-	    eko = Subject.create('Экология', '', Subject.COMMON),
-	    nir = Subject.create('Тьюториал по подготовке научной публикации', '', Subject.COMMON);
+	    demman  = Subject.create('Управление требованиями', '', Subject.COMMON),
+	    spivt  = Subject.create('СПИиВТ', '', Subject.COMMON),
+	    metopt  = Subject.create('Методы оптимизации', '', Subject.COMMON),
+	    mettest  = Subject.create('Методы тестирования', '', Subject.COMMON),
+	    abmd  = Subject.create('АБМД', '', Subject.COMMON),
+	    algan = Subject.create('Анализ Алгоритмов', '', Subject.COMMON);
 	    
 	var 
-	    palchikov = Teacher.create('Пальчиков Е.И..'),
-	    shehtman = Teacher.create('Шехтман Е.Л.'),
-	    petrova = Teacher.create('Петрова Э.Д.'),
-	    knyazev = Teacher.create('Князев Б.А.'),
-	    arjannikov = Teacher.create('Аржанников А.В.'),
-	    jullog = Teacher.create('Жуланов В.В., Логашенко И.Б.');
+	    vasuchkova = Teacher.create('Васючкова Т.С.'),
+	    ivancheva = Teacher.create('Иванчева Н.А.'),
+	    miginsky = Teacher.create('Мигинский Д.С.'),
+	    panin = Teacher.create('Панин А.А.'),
+	    kutnenko = Teacher.create('Кутненко О.А.'),
+	    zolotuhin = Teacher.create('Золотухин Т.А.'),
+	    pavlovsky = Teacher.create('Павловский Е.Н.'),
+	    yahyaeva = Teacher.create('Яхъяева');
 	    
 	var 
 	    nsu = function (aud) { return Location.create("ГК",aud); },
@@ -39,24 +41,27 @@ window.onload = function main()
 	    LECTURE  = Type.create('Лекция'),
 	    SEMINAR  = Type.create('Семинар');
 	
-	// mon.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, bj,   nsu(304),  ivanchenko));
-	// mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, bj,   nsu(304),  ivanchenko));
-	// mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng,   nov(2235), tambovskaya));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, demman, nsu(257), vasuchkova, 0));
+	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, demman, nsu(257), ivancheva, 1));
+	mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, spivt, nov(2128), miginsky));
+	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, spivt, nov(2128), miginsky));
+	mon.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, spivt, nov(5239), miginsky));
 	
-	tue.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, fioi,   nsu('БА'), palchikov));
-	tue.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, fioi,   nsu('БА'), palchikov));
+	// tue.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, fioi,   nsu('БА'), palchikov));
+	// tue.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, fioi,   nsu('БА'), palchikov));
 
-	//wed.add(Course.create( 9*60 +  0, 1*60 + 35, LECTURE, db, iae('УЦ'), islam));
-	//wed.add(Course.create(10*60 + 45, 1*60 + 35, SEMINAR, ood, inp(508), gayazov));
-	//wed.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, dis, inp('Библиотека'), fatkin));
+	wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, metopt, nov(4117), panin, 1));
 	
-	//thu.add(Course.create(12*60 + 30, 1*60 + 35, LECTURE, nir, inp(508), jullog));
-	//thu.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, biz, nsu(316), petrova));
+	thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, metopt, nov(5210), kutnenko));
+	thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, mettest, nov(4213), zolotuhin));
 
-	fri.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE,  prep,  nsu('БА'), knyazev));
+	fri.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, abmd, nov(1155), pavlovsky, 0));
+	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, abmd, nov(1155), pavlovsky, 1));
+	fri.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, algan, nov(1156), yahyaeva, 0));
+	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, algan, nov(1156), yahyaeva, 1));
 
-	sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
-	sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov));
+	// sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
+	// sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov));
 	
 	// week.add(mon);
 	week.add(tue);
