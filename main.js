@@ -2,7 +2,7 @@ window.onload = function main()
 {
 	frame.init();
 	
-	var week = Week.create( 9*60 + 00, 5*(1*60 + 50), 1*60 + 50);
+	var week = Week.create( 9*60 + 00, 7*(1*60 + 50), 1*60 + 50);
 	week.paddingTop = 28;
 	week.paddingLeft = 64;
 	
@@ -63,12 +63,12 @@ window.onload = function main()
 	// sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
 	// sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov));
 	
-	// week.add(mon);
+	week.add(mon);
 	week.add(tue);
 	week.add(wed);
 	week.add(thu);
 	week.add(fri);
-	week.add(sat);
+	//week.add(sat);
 	
 	frame.add(week);
 	
