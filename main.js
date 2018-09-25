@@ -2,7 +2,7 @@ window.onload = function main()
 {
 	frame.init();
 	
-	var week = Week.create( 9*60 + 00, 7*(1*60 + 50), 1*60 + 50);
+	var week = Week.create( 9*60 + 00, 6*(1*60 + 50), 1*60 + 50);
 	week.paddingTop = 28;
 	week.paddingLeft = 64;
 	
@@ -42,7 +42,7 @@ window.onload = function main()
 	    SEMINAR  = Type.create('Семинар');
 	
 	mon.add(Course.create(10*60 + 00, 1*60 + 35, LECTURE, demman, nsu(257), vasuchkova, 1));
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, demman, nsu(257), ivancheva, 0));
+	mon.add(Course.create(10*60 + 00, 1*60 + 35, SEMINAR, demman, nsu(257), ivancheva, 0));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, spivt, nov(2128), miginsky));
 	mon.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, spivt, nov(2128), miginsky));
 	mon.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, spivt, nov(5239), miginsky, 1));
