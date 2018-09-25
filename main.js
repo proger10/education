@@ -41,7 +41,7 @@ window.onload = function main()
 	    LECTURE  = Type.create('Лекция'),
 	    SEMINAR  = Type.create('Семинар');
 	
-	mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, demman, nsu(257), vasuchkova, 1));
+	mon.add(Course.create(10*60 + 00, 1*60 + 35, LECTURE, demman, nsu(257), vasuchkova, 1));
 	mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, demman, nsu(257), ivancheva, 0));
 	mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, spivt, nov(2128), miginsky));
 	mon.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, spivt, nov(2128), miginsky));
@@ -55,10 +55,10 @@ window.onload = function main()
 	thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, metopt, nov(5210), kutnenko));
 	thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, mettest, nov(4213), zolotuhin));
 
-	fri.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, abmd, nov(1155), pavlovsky, 1));
-	fri.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, abmd, nov(1155), pavlovsky, 0));
-	fri.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, algan, nov(1156), yahyaeva, 1));
-	fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, algan, nov(1156), yahyaeva, 0));
+	fri.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, abmd, nov(1155), pavlovsky, 1));
+	fri.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, abmd, nov(1155), pavlovsky, 0));
+	fri.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, algan, nov(1156), yahyaeva, 1));
+	fri.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, algan, nov(1156), yahyaeva, 0));
 
 	// sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel, nsu(402), shehtman));
 	// sat.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, eko, nsu('БА'), arjannikov));
