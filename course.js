@@ -46,6 +46,13 @@ Course.create = function (start,length,type,name,place,teacher,flicker)
 		this.slider.element.style.height = this.slider.coverage*this.height + 'px';
 	}
 	
+	course.innerElement.appendChild(course.type.cloneElement());
+	
+	course.innerElement.appendChild(course.name.cloneElement());
+	course.innerElement.appendChild(course.place.cloneElement());
+	course.innerElement.appendChild(course.teacher.cloneElement());
+	
+	
 	course.timer = new Object();
 	course.timer.element = document.createElement('div');
 	course.timer.element.style.display = 'none';
@@ -82,12 +89,6 @@ Course.create = function (start,length,type,name,place,teacher,flicker)
 		
 		return string;
 	}
-	
-	course.innerElement.appendChild(course.type.cloneElement());
-	
-	course.innerElement.appendChild(course.name.cloneElement());
-	course.innerElement.appendChild(course.place.cloneElement());
-	course.innerElement.appendChild(course.teacher.cloneElement());
 	
 	course.position = 0;
 	course.width = 0;
