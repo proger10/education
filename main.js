@@ -30,7 +30,8 @@ window.onload = function main()
         jijimov = Teacher.create('Жижимов О.Л.'),
         muhortov = Teacher.create('Мухортов В.В.'),
         savostyanov = Teacher.create('Савостьянов А.Н.'),
-        yahyaeva = Teacher.create('Яхъяева');
+        barahnin = Teacher.create('Барахнин В.Б.'),
+        fedotova = Teacher.create('Федотова О.А.');
         
     var 
         nsu = function (aud) { return Location.create("ГК",aud); },
@@ -43,11 +44,13 @@ window.onload = function main()
     
     mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, mimi, nov(2128), kugaevckih, 1));
     mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, mimi, nov(2128), kugaevckih, 0));
+    mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, intdoc, nov(5207), barahnin, 1));
     
     tue.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, iface,nov(4220), derjo));
 
     // wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, metopt, nov(4117), panin, 0));
     
+    thu.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intdoc, nov(2128), fedotova, 0));
     thu.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, phil, nov(2128), trubicin, 1));
     thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, phil, nov(3120), trubicin, 0));
     thu.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, distsys, nov(2128), jijimov, 1));
@@ -70,7 +73,7 @@ window.onload = function main()
     week.add(wed);
     week.add(thu);
     week.add(fri);
-    //week.add(sat);
+    week.add(sat);
     
     frame.add(week);
     
