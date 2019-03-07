@@ -2,7 +2,7 @@ window.onload = function main()
 {
     frame.init();
     
-    var week = Week.create( 9*60 + 00, 6*(1*60 + 50), 1*60 + 50);
+    var week = Week.create( 9*60 + 00, 7*(1*60 + 50), 1*60 + 50);
     week.paddingTop = 28;
     week.paddingLeft = 64;
     
@@ -46,17 +46,16 @@ window.onload = function main()
     mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, mimi, nov(2128), kugaevckih, 1));
     mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, intdoc, nov(5207), barahnin, 0));
     
-    tue.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, iface,nov(4220), derjo));
+    tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, iface,nov(4220), derjo));
+    tue.add(Course.create(20*60 + 00, 1*60 + 35, SEMINAR, iface,nov(4220), derjo));
 
     // wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, metopt, nov(4117), panin, 0));
     
     thu.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intdoc, nov(2128), fedotova, 1));
     thu.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, phil, nov(2128), trubicin, 0));
     thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, phil, nov(3120), trubicin, 1));
-    thu.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, distsys, nov(2128), jijimov, 0));
-    thu.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, iface, nov(1155), derjo, 1));
-    thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, distsys, nov(1154), jijimov, 0));
-    thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, iface, nov(4218), derjo, 1));
+    thu.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, distsys, nov(2128), jijimov));
+    thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, distsys, nov(1154), jijimov));
 
     // fri.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, abmd, nov(1155), pavlovsky, 1));
     // fri.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, abmd, nov(1155), pavlovsky, 0));
