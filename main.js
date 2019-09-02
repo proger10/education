@@ -12,7 +12,7 @@ window.onload = function main()
         wed = Day.create( 3, 'Среда'       ),
         thu = Day.create( 4, 'Четверг'     ),
         fri = Day.create( 5, 'Пятница'     );
-        // sat = Day.create( 6, 'Суббота'     );
+        sat = Day.create( 6, 'Суббота'     );
         
     var 
         eng  = Subject.create('Английский язык', '', Subject.COMMON),
@@ -59,7 +59,7 @@ window.onload = function main()
     week.add(wed);
     week.add(thu);
     week.add(fri);
-    week.add(sat);
+    // week.add(sat);
     
     frame.add(week);
     
