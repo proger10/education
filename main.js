@@ -12,26 +12,22 @@ window.onload = function main()
         wed = Day.create( 3, 'Среда'       ),
         thu = Day.create( 4, 'Четверг'     ),
         fri = Day.create( 5, 'Пятница'     ),
-        sat = Day.create( 6, 'Суббота'     );
+        // sat = Day.create( 6, 'Суббота'     );
         
     var 
-        mimi  = Subject.create('Цифровая обработка МиМИ', '', Subject.COMMON),
-        iface  = Subject.create('Интерфейсы программных систем', '', Subject.COMMON),
-        phil  = Subject.create('Философия и методология науки', '', Subject.COMMON),
-        distsys  = Subject.create('Распределенные системы', '', Subject.COMMON),
-        strit  = Subject.create('Современные тенденции развития информационных технологий', '', Subject.COMMON),
-        minion = Subject.create('Управление ИТ-проектами (КафОИ)', '', Subject.SPECIAL),
-        intdoc = Subject.create('Интеллектуальная обработка документов и фактов (КафСИ)', '', Subject.SPECIAL);
+        eng  = Subject.create('Английский язык', '', Subject.COMMON),
+        intel  = Subject.create('Интеллектуальные системы', '', Subject.COMMON),
+        trpo  = Subject.create('Технология разработки программного обеспечения', '', Subject.COMMON),
+        puitp  = Subject.create('Практика управления ИТ-проектами', '', Subject.SPECIAL),
+        model  = Subject.create('Нечёткие модели и теория мягких вычислений', '', Subject.SPECIAL);
         
     var 
-        kugaevckih = Teacher.create('Кугаевских А.В.'),
-        derjo = Teacher.create('Держо М.А.'),
-        trubicin = Teacher.create('Трубицын О.К.'),
-        jijimov = Teacher.create('Жижимов О.Л.'),
+        hockina = Teacher.create('Хоцкина О.В.'),
+        gulnara = Teacher.create('Яхъяева Г.Э.'),
+        nagornih = Teacher.create('Нагорных Д.Ю.'),
+        miginsky = Teacher.create('Мигинский Д.С.'),
         muhortov = Teacher.create('Мухортов В.В.'),
-        savostyanov = Teacher.create('Савостьянов А.Н.'),
-        barahnin = Teacher.create('Барахнин В.Б.'),
-        fedotova = Teacher.create('Федотова О.А.');
+        bukshev = Teacher.create('Букшев И.Е.');
         
     var 
         nsu = function (aud) { return Location.create("ГК",aud); },
@@ -42,30 +38,21 @@ window.onload = function main()
         LECTURE  = Type.create('Лекция'),
         SEMINAR  = Type.create('Семинар');
     
-    mon.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, mimi, nov(2128), kugaevckih, 0));
-    mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, mimi, nov(2128), kugaevckih, 1));
-    mon.add(Course.create(12*60 + 40, 1*60 + 35, LECTURE, intdoc, nov(5207), barahnin, 0));
+    mon.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, model, nov(4231), gulnara));
     
-    tue.add(Course.create(18*60 + 10, 1*60 + 35, LECTURE, iface,nov(4220), derjo));
-    tue.add(Course.create(20*60 + 00, 1*60 + 35, SEMINAR, iface,nov(4220), derjo));
+    tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 0));
+    tue.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
 
-    // wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, metopt, nov(4117), panin, 0));
+    wed.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, puitp, nov(5272), muhortov));
+    wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, trpo, nov(1156), miginsky, 0));
+    wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, puitp, nov(1156), muhortov, 1));
+    wed.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, trpo, nov(1156), miginsky));
     
-    thu.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intdoc, nov(2128), fedotova, 1));
-    thu.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, phil, nov(2128), trubicin, 0));
-    thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, phil, nov(3120), trubicin, 1));
-    thu.add(Course.create(16*60 + 20, 1*60 + 35, LECTURE, distsys, nov(2128), jijimov));
-    thu.add(Course.create(18*60 + 10, 1*60 + 35, SEMINAR, distsys, nov(1154), jijimov));
+    thu.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
 
-    // fri.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, abmd, nov(1155), pavlovsky, 1));
-    // fri.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, abmd, nov(1155), pavlovsky, 0));
-    // fri.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, algan, nov(1156), yahyaeva, 1));
-    // fri.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, algan, nov(1156), yahyaeva, 0));
+    fri.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, trpo, nov(1154), bukshev));
 
-    sat.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, minion, nov(1156), muhortov, 0));
-    sat.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, minion, nov(1156), muhortov, 1));
-    sat.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, strit, nov(3120), savostyanov, 0));
-    sat.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, strit, nov(3120), savostyanov, 1));
+    // sat.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, minion, nov(1156), muhortov, 0));
     
     week.add(mon);
     week.add(tue);
