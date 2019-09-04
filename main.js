@@ -40,7 +40,7 @@ window.onload = function main()
     
     mon.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, model, nov(4231), gulnara));
     
-    tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 0));
+    tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 1));
     tue.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
 
     wed.add(Course.create(09*60 + 00, 1*60 + 35, LECTURE, trpo, nov(2128), miginsky));
