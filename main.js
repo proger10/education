@@ -43,10 +43,10 @@ window.onload = function main()
     tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 0));
     tue.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
 
+    wed.add(Course.create(09*60 + 00, 1*60 + 35, LECTURE, trpo, nov(2128), miginsky));
+    wed.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, trpo, nov(2128), miginsky));
     wed.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, puitp, nov(5272), muhortov));
-    wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, trpo, nov(1156), miginsky, 0));
     wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, puitp, nov(1156), muhortov, 1));
-    wed.add(Course.create(16*60 + 20, 1*60 + 35, SEMINAR, trpo, nov(1156), miginsky));
     
     thu.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
 
