@@ -39,19 +39,19 @@ window.onload = function main()
         SEMINAR  = Type.create('Семинар');
     
     mon.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, model, nov(4231), gulnara));
+    tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
     
     tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 1));
-    tue.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
 
     wed.add(Course.create(09*60 + 00, 1*60 + 35, LECTURE, trpo, nov(2128), miginsky));
     wed.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, trpo, nov(2128), miginsky));
     wed.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, puitp, nov(5272), muhortov));
     wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, puitp, nov(1156), muhortov, 1));
     
-    thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
+    thu.add(Course.create(14*60 + 30,3 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
 
-    fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, trpo, nov(1154), bukshev));
-
+    fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, trpo, nov(1154), bukshev))
+;
     // sat.add(Course.create( 9*60 + 00, 1*60 + 35, LECTURE, minion, nov(1156), muhortov, 0));
     
     week.add(mon);
@@ -70,6 +70,6 @@ window.onload = function main()
 };
 
 window.onresize = function reshape()
-{
-    frame.reshape();
+
+  {  frame.reshape();
 };
