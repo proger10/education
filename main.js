@@ -39,7 +39,7 @@ window.onload = function main()
         SEMINAR  = Type.create('Семинар');
     
     mon.add(Course.create( 9*60 + 00, 1*60 + 35, SEMINAR, model, nov(4231), gulnara));
-    tue.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
+    mon.add(Course.create(10*60 + 50, 1*60 + 35, SEMINAR, intel,nov(1156), nagornih));
     
     tue.add(Course.create(10*60 + 50, 1*60 + 35, LECTURE, intel,nov(2128), gulnara, 1));
 
