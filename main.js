@@ -48,7 +48,7 @@ window.onload = function main()
     wed.add(Course.create(12*60 + 40, 1*60 + 35, SEMINAR, puitp, nov(5272), muhortov));
     wed.add(Course.create(14*60 + 30, 1*60 + 35, LECTURE, puitp, nov(1156), muhortov, 1));
     
-    thu.add(Course.create(14*60 + 30,3 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
+    thu.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, eng, nov(1154), hockina));
 
     fri.add(Course.create(14*60 + 30, 1*60 + 35, SEMINAR, trpo, nov(1154), bukshev))
 ;
